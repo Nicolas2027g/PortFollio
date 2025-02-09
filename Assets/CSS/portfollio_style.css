@@ -136,7 +136,13 @@ h2{
     transition: 0.5s;
 }
 
-.projet-pic li img{
+.projet-pic li a{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projet-pic li a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
