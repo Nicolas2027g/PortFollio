@@ -1,0 +1,82 @@
+/* Mise en place de la charte graphique */
+:root {
+    --contraste-color: #7E96C5;
+    --background-color: #697FB1;
+    --text-color: #BBDBFF;
+    --font-Title: 'Montserrat', sans-serif;
+    --font-main: 'Open Sans', sans-serif;
+  }
+
+/* Normalizer */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+    text-decoration: none;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;    
+    background: var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav img {
+    display: flex;
+    align-items: flex-start;
+    max-width: 75px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--text-color);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 70%;
+}
+
+nav ul li a:hover {
+    color: var(--text-color);
+}
+nav ul li{
+    list-style: none;
+}
