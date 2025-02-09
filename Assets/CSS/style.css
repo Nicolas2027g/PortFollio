@@ -98,6 +98,7 @@ main {
     align-items: center;
     height: 85vh;
 }
+
 .Presentation-section{
     display: flex;
     justify-content: center;
@@ -110,6 +111,7 @@ main {
     background-color: var(--contraste-color);
     border-radius: 20px;
 }
+
 .Presentation-pic {
     width: 300px;
     height: 300px;
@@ -179,6 +181,7 @@ h2 {
 .social a:hover {
     color: black;
 }
+
 footer{
     display: flex;
     justify-content: center;
