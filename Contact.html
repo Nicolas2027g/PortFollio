@@ -23,21 +23,23 @@
     <main>
         <section>
             <h2>Contact</h2>
-            <div class="Formulaire">
-                <content class="email">
-                    <p>Email</p>
-                    <input type="text" placeholder="Entrez votre email">
-                </content>
-                <content class="Objet">
-                    <p>Objet</p>
-                    <input type="text" placeholder="Entrez l'objet du mail">
-                </content>
-                <content class="Sujet">
-                    <p>Sujet</p>
-                    <textarea placeholder="Insérez les éléments du mail" rows="6"></textarea>
-                </content>
-            </div>
-            <a href="Index.html">Envoyer</a>
+            <form action="mailto:nguillard@et.esiea.fr" method="post">
+                <div class="Formulaire">
+                    <content class="email">
+                        <p>Email</p>
+                        <input type="text" placeholder="Entrez votre email" required>
+                    </content>
+                    <content class="Objet">
+                        <p>Objet</p>
+                        <input type="text" placeholder="Entrez l'objet du mail" required>
+                    </content>
+                    <content class="Sujet">
+                        <p>Sujet</p>
+                        <textarea placeholder="Insérez les éléments du mail" rows="6" required></textarea>
+                    </content>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
     <footer>
